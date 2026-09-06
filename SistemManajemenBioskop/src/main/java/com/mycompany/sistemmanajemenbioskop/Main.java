@@ -36,9 +36,7 @@ public class Main {
 
             switch (pilihan) {
 
-                // =========================================================
-                // DATA FILM
-                // =========================================================
+                
                 case 1:
                     int pilihanFilm;
 
@@ -56,7 +54,6 @@ public class Main {
 
                         switch (pilihanFilm) {
 
-                            // CREATE
                             case 1:
                                 System.out.print("Judul Film: ");
                                 String judul = input.nextLine();
@@ -74,7 +71,6 @@ public class Main {
                                 System.out.println("Film berhasil ditambahkan!");
                                 break;
 
-                            // READ
                             case 2:
                                 if (daftarFilm.isEmpty()) {
                                     System.out.println("Belum ada film.");
@@ -94,7 +90,6 @@ public class Main {
                                 }
                                 break;
 
-                            // UPDATE
                             case 3:
                                 if (daftarFilm.isEmpty()) {
                                     System.out.println("Belum ada film.");
@@ -122,7 +117,6 @@ public class Main {
                                 }
                                 break;
 
-                            // DELETE
                             case 4:
                                 if (daftarFilm.isEmpty()) {
                                     System.out.println("Belum ada film.");
@@ -144,9 +138,7 @@ public class Main {
                     break;
 
 
-                // =========================================================
-                // DATA STUDIO
-                // =========================================================
+         
                 case 2:
                     int pilihanStudio;
 
@@ -164,7 +156,6 @@ public class Main {
 
                         switch (pilihanStudio) {
 
-                            // CREATE
                             case 1:
                                 System.out.print("Nama Studio: ");
                                 String nama = input.nextLine();
@@ -183,7 +174,6 @@ public class Main {
                                 System.out.println("Studio berhasil ditambahkan!");
                                 break;
 
-                            // READ
                             case 2:
                                 if (daftarStudio.isEmpty()) {
                                     System.out.println("Belum ada studio.");
@@ -203,7 +193,6 @@ public class Main {
                                 }
                                 break;
 
-                            // UPDATE
                             case 3:
                                 if (daftarStudio.isEmpty()) {
                                     System.out.println("Belum ada studio.");
@@ -232,7 +221,6 @@ public class Main {
                                 }
                                 break;
 
-                            // DELETE
                             case 4:
                                 if (daftarStudio.isEmpty()) {
                                     System.out.println("Belum ada studio.");
@@ -254,9 +242,7 @@ public class Main {
                     break;
 
 
-                // =========================================================
-                // DATA TIKET
-                // =========================================================
+             
                 case 3:
                     int pilihanTiket;
 
@@ -274,7 +260,6 @@ public class Main {
 
                         switch (pilihanTiket) {
 
-                            // CREATE
                             case 1:
                                 System.out.print("Nama Pembeli: ");
                                 String pembeli = input.nextLine();
@@ -292,7 +277,6 @@ public class Main {
                                 System.out.println("Tiket berhasil ditambahkan!");
                                 break;
 
-                            // READ
                             case 2:
                                 if (daftarTiket.isEmpty()) {
                                     System.out.println("Belum ada tiket.");
@@ -312,7 +296,6 @@ public class Main {
                                 }
                                 break;
 
-                            // UPDATE
                             case 3:
                                 if (daftarTiket.isEmpty()) {
                                     System.out.println("Belum ada tiket.");
@@ -340,7 +323,6 @@ public class Main {
                                 }
                                 break;
 
-                            // DELETE
                             case 4:
                                 if (daftarTiket.isEmpty()) {
                                     System.out.println("Belum ada tiket.");
@@ -361,8 +343,6 @@ public class Main {
                     } while (pilihanTiket != 0);
                     break;
 
-
-                // EXIT
                 case 0:
                     System.out.println("Terimakasih.");
                     break;
