@@ -13,10 +13,12 @@ public class Tiket {
     String pembeli;
     String film;
     int jumlah;
+    int nomor;
 
-    public Tiket(String pembeli, String film, int jumlah) {
+    public Tiket(String pembeli, String film, int jumlah, int nomor) {
         this.pembeli = pembeli;
         this.film = film;
         this.jumlah = jumlah;
+        this.nomor = nomor;
     }
 }
