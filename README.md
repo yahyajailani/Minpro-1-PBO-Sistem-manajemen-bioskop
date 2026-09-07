@@ -1,3 +1,6 @@
+## Nama : Yahya Jailani
+## NIM  : 2509116085
+
 # SISTEM MANAJEMEN BIOSKOP
 
 Sistem Manajemen Bioskop merupakan program yang berguna untuk mengelola data film, data studio, dan data tiket pemesanan bioskop.
