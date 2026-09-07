@@ -10,12 +10,12 @@ package com.mycompany.sistemmanajemenbioskop;
  */
 public class Studio {
 
-    String nama;
+    int nomor;
     int kapasitas;
     String tipe;
 
-    public Studio(String nama, int kapasitas, String tipe) {
-        this.nama = nama;
+    public Studio(int nomor, int kapasitas, String tipe) {
+        this.nomor = nomor;
         this.kapasitas = kapasitas;
         this.tipe = tipe;
     }
