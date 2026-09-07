@@ -34,8 +34,7 @@ public class Main {
             pilihan = input.nextInt();
             input.nextLine();
 
-            switch (pilihan) {
-
+            switch (pilihan) {         
                 
                 case 1:
                     int pilihanFilm;
@@ -157,9 +156,10 @@ public class Main {
                         switch (pilihanStudio) {
 
                             case 1:
-                                System.out.print("Nama Studio: ");
-                                String nama = input.nextLine();
-
+                                System.out.print("Nomor studio: ");
+                                int nomor = input.nextInt();
+                                input.nextLine();
+                                
                                 System.out.print("Kapasitas: ");
                                 int kapasitas = input.nextInt();
                                 input.nextLine();
@@ -168,7 +168,7 @@ public class Main {
                                 String tipe = input.nextLine();
 
                                 daftarStudio.add(
-                                    new Studio(nama, kapasitas, tipe)
+                                    new Studio(nomor, kapasitas, tipe)
                                 );
 
                                 System.out.println("Studio berhasil ditambahkan!");
@@ -185,7 +185,7 @@ public class Main {
 
                                         System.out.println(
                                             (i + 1) + ". " +
-                                            s.nama + " | " +
+                                            s.nomor + " | " +
                                             s.kapasitas + " kursi | " +
                                             s.tipe
                                         );
@@ -204,9 +204,10 @@ public class Main {
                                     if (no >= 1 && no <= daftarStudio.size()) {
                                         Studio s = daftarStudio.get(no - 1);
 
-                                        System.out.print("Nama baru: ");
-                                        s.nama = input.nextLine();
-
+                                        System.out.print("Nomor Baru: ");
+                                        s.nomor = input.nextInt();
+                                        input.nextLine();
+                                        
                                         System.out.print("Kapasitas baru: ");
                                         s.kapasitas = input.nextInt();
                                         input.nextLine();
@@ -269,9 +270,12 @@ public class Main {
 
                                 System.out.print("Jumlah Tiket: ");
                                 int jumlah = input.nextInt();
+                                
+                                System.out.print("Nomor Studio: ");
+                                int nomor = input.nextInt();
 
                                 daftarTiket.add(
-                                    new Tiket(pembeli, film, jumlah)
+                                    new Tiket(pembeli, film, jumlah, nomor)
                                 );
 
                                 System.out.println("Tiket berhasil ditambahkan!");
@@ -290,7 +294,8 @@ public class Main {
                                             (i + 1) + ". " +
                                             t.pembeli + " | " +
                                             t.film + " | " +
-                                            t.jumlah + " tiket"
+                                            t.jumlah + " | " + 
+                                            t.nomor + " tiket"
                                         );
                                     }
                                 }
@@ -315,6 +320,9 @@ public class Main {
 
                                         System.out.print("Jumlah baru: ");
                                         t.jumlah = input.nextInt();
+                                        
+                                        System.out.print("Studio baru: ");
+                                        t.nomor = input.nextInt();
 
                                         System.out.println("Tiket berhasil diubah!");
                                     } else {
@@ -342,7 +350,7 @@ public class Main {
 
                     } while (pilihanTiket != 0);
                     break;
-
+                    
                 case 0:
                     System.out.println("Terimakasih.");
                     break;
